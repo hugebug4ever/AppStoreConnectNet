@@ -1,0 +1,14 @@
+# AppStoreConnect.Net.Model.GameCenterLeaderboardSetsV2ResponseIncludedInner
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**Type** | **string** |  | 
+**Id** | **string** |  | 
+**Attributes** | [**GameCenterLeaderboardAttributes**](GameCenterLeaderboardAttributes.md) |  | [optional] 
+**Relationships** | [**GameCenterLeaderboardV2Relationships**](GameCenterLeaderboardV2Relationships.md) |  | [optional] 
+**Links** | [**ResourceLinks**](ResourceLinks.md) |  | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+

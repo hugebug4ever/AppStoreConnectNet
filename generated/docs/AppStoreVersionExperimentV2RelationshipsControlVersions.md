@@ -1,0 +1,11 @@
+# AppStoreConnect.Net.Model.AppStoreVersionExperimentV2RelationshipsControlVersions
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**Meta** | [**PagingInformation**](PagingInformation.md) |  | [optional] 
+**Data** | [**List&lt;AlternativeDistributionPackageCreateRequestDataRelationshipsAppStoreVersionData&gt;**](AlternativeDistributionPackageCreateRequestDataRelationshipsAppStoreVersionData.md) |  | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+

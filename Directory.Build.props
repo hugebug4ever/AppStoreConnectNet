@@ -1,0 +1,22 @@
+<Project>
+	<PropertyGroup>
+		<DebugType>portable</DebugType>
+		<PublishRepositoryUrl>true</PublishRepositoryUrl>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+		<IncludeSymbols>true</IncludeSymbols>
+	</PropertyGroup>
+
+	<ItemGroup Condition="'$(MSBuildProjectName)' == 'AppStoreConnect.Net'">
+		<Compile Include="$(MSBuildThisFileDirectory)/additions/*.cs" />
+		<PackageReference Include="JWT" Version="10.0.2" />
+		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All"/>
+	</ItemGroup>
+	
+	<ItemGroup Condition="'$(MSBuildProjectName)' == 'AppStoreConnect.Net.Test'">
+		<Compile Include="$(MSBuildThisFileDirectory)/additions_test/*.cs" />
+	</ItemGroup>
+
+	<PropertyGroup Condition="'$(GITHUB_ACTIONS)' == 'true' Or '$(TF_BUILD)' == 'true'">
+		<ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+	</PropertyGroup>
+</Project>

@@ -1,0 +1,15 @@
+# AppStoreConnect.Net.Model.GameCenterPlayerAchievementSubmissionAttributes
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**BundleId** | **string** |  | [optional] 
+**ChallengeIds** | **List&lt;string&gt;** |  | [optional] 
+**PercentageAchieved** | **int** |  | [optional] 
+**ScopedPlayerId** | **string** |  | [optional] 
+**SubmittedDate** | **DateTimeOffset** |  | [optional] 
+**VendorIdentifier** | **string** |  | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
