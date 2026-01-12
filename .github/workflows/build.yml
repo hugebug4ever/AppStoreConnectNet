@@ -6,7 +6,7 @@ on:
       - main
     paths:
       - '*.cs'
-      - '.github/workflows/**'
+      # - '.github/workflows/**'
   release:
     types: [published]
   workflow_dispatch:
@@ -67,7 +67,7 @@ jobs:
       id-token: write  # enable GitHub OIDC token issuance for this job
     needs: build
     runs-on: ubuntu-latest
-    # if: github.event_name == 'release'
+    if: github.event_name == 'release'
     steps:
       - name: Download Artifacts
         uses: actions/download-artifact@v7
