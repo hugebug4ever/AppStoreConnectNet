@@ -43,7 +43,7 @@ jobs:
         
         echo "::group::Packing NuGet package version $VERSION"
         New-Item -ItemType Directory -Force -Path .\artifacts
-        dotnet pack --output ./artifacts --configuration Release -p:PackageVersion=$VERSION ./generated/src/AppStoreConnect.Net/AppStoreConnect.Net.csproj
+        dotnet pack --output ./artifacts --configuration Release -p:PackageId=AppStoreConnect.Bug -p:PackageVersion=$VERSION ./generated/src/AppStoreConnect.Net/AppStoreConnect.Net.csproj
         echo "::endgroup::"
         ls -la ./artifacts
 
