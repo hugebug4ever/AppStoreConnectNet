@@ -17,8 +17,9 @@ using Xunit;
 
 using AppStoreConnect.Net.Client;
 using AppStoreConnect.Net.Api;
+using System.Net;
 // uncomment below to import models
-//using AppStoreConnect.Net.Model;
+using AppStoreConnect.Net.Model;
 
 namespace AppStoreConnect.Net.Test.Api
 {
@@ -35,7 +36,9 @@ namespace AppStoreConnect.Net.Test.Api
 
         public AppsApiTests()
         {
-            instance = new AppsApi();
+            // instance = new AppsApi();
+            var config = Util.GetConfig();
+            instance = new Net.Api.AppsApi(config);
         }
 
         public void Dispose()
@@ -485,6 +488,10 @@ namespace AppStoreConnect.Net.Test.Api
             //int? limitAppStoreVersionExperimentsV2 = null;
             //var response = instance.AppsAppStoreVersionsGetToManyRelated(id, filterPlatform, filterVersionString, filterAppStoreState, filterAppVersionState, filterId, fieldsAppStoreVersions, fieldsApps, fieldsAgeRatingDeclarations, fieldsAppStoreVersionLocalizations, fieldsBuilds, fieldsAppStoreVersionPhasedReleases, fieldsGameCenterAppVersions, fieldsRoutingAppCoverages, fieldsAppStoreReviewDetails, fieldsAppStoreVersionSubmissions, fieldsAppClipDefaultExperiences, fieldsAppStoreVersionExperiments, fieldsAlternativeDistributionPackages, limit, include, limitAppStoreVersionLocalizations, limitAppStoreVersionExperiments, limitAppStoreVersionExperimentsV2);
             //Assert.IsType<AppStoreVersionsResponse>(response);
+
+            string id = Environment.GetEnvironmentVariable("APP_ID_TEST") ?? throw new ArgumentNullException("APP_ID_TEST environment variable not set");
+            var response = instance.AppsAppStoreVersionsGetToManyRelated(id);
+            Assert.IsType<AppStoreVersionsResponse>(response);
         }
 
         /// <summary>

@@ -120,7 +120,7 @@ namespace AppStoreConnect.Net.Model
         /// <param name="usesIdfa">usesIdfa.</param>
         /// <param name="downloadable">downloadable.</param>
         /// <param name="createdDate">createdDate.</param>
-        public AppStoreVersionAttributes(Platform? platform = default, string versionString = default, AppStoreVersionState? appStoreState = default, AppVersionState? appVersionState = default, string copyright = default, ReviewTypeEnum? reviewType = default, ReleaseTypeEnum? releaseType = default, DateTimeOffset earliestReleaseDate = default, bool usesIdfa = default, bool downloadable = default, DateTimeOffset createdDate = default)
+        public AppStoreVersionAttributes(Platform? platform = default, string versionString = default, AppStoreVersionState? appStoreState = default, AppVersionState? appVersionState = default, string copyright = default, ReviewTypeEnum? reviewType = default, ReleaseTypeEnum? releaseType = default, DateTimeOffset? earliestReleaseDate = default, bool? usesIdfa = default, bool downloadable = default, DateTimeOffset createdDate = default)
         {
             this.Platform = platform;
             this.VersionString = versionString;
@@ -151,14 +151,14 @@ namespace AppStoreConnect.Net.Model
         /// Gets or Sets EarliestReleaseDate
         /// </summary>
         [DataMember(Name = "earliestReleaseDate", EmitDefaultValue = false)]
-        public DateTimeOffset EarliestReleaseDate { get; set; }
+        public DateTimeOffset? EarliestReleaseDate { get; set; }
 
         /// <summary>
         /// Gets or Sets UsesIdfa
         /// </summary>
         [DataMember(Name = "usesIdfa", EmitDefaultValue = true)]
         [Obsolete]
-        public bool UsesIdfa { get; set; }
+        public bool? UsesIdfa { get; set; }
 
         /// <summary>
         /// Gets or Sets Downloadable

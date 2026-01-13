@@ -1,6 +1,7 @@
 ﻿using System;
+using AppStoreConnect.Net;
 
-namespace AppStoreConnect.Test
+namespace AppStoreConnect.Net.Api
 {
 	public class Util
 	{

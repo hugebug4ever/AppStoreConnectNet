@@ -2,7 +2,8 @@
   "name": "apple-appstoreconnect-api-client",
   "version": "0.0.0",
   "scripts": {
-    "gen-csharp": "openapi-generator-cli generate --generator-key csharp"
+    "gen-csharp": "openapi-generator-cli generate --generator-key csharp",
+    "clean": "pwsh -Command \"Remove-Item -Recurse -Force ./generated; \" "
   },
   "dependencies": {
     "@openapitools/openapi-generator-cli": "^2.27.0"

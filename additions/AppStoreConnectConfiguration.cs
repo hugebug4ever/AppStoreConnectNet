@@ -14,7 +14,7 @@ using static System.Net.WebRequestMethods;
 using System.Text.RegularExpressions;
 using AppStoreConnect.Net.Client;
 
-namespace AppStoreConnect.Client;
+namespace AppStoreConnect.Net.Client;
 
 public class AppStoreConnectConfiguration : Configuration
 {

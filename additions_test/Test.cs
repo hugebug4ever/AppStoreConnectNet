@@ -4,7 +4,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace AppStoreConnect.Test
+namespace AppStoreConnect.Net.Api
 {
 
     public class Test
