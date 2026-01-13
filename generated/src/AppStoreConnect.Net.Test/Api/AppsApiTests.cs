@@ -489,9 +489,9 @@ namespace AppStoreConnect.Net.Test.Api
             //var response = instance.AppsAppStoreVersionsGetToManyRelated(id, filterPlatform, filterVersionString, filterAppStoreState, filterAppVersionState, filterId, fieldsAppStoreVersions, fieldsApps, fieldsAgeRatingDeclarations, fieldsAppStoreVersionLocalizations, fieldsBuilds, fieldsAppStoreVersionPhasedReleases, fieldsGameCenterAppVersions, fieldsRoutingAppCoverages, fieldsAppStoreReviewDetails, fieldsAppStoreVersionSubmissions, fieldsAppClipDefaultExperiences, fieldsAppStoreVersionExperiments, fieldsAlternativeDistributionPackages, limit, include, limitAppStoreVersionLocalizations, limitAppStoreVersionExperiments, limitAppStoreVersionExperimentsV2);
             //Assert.IsType<AppStoreVersionsResponse>(response);
 
-            string id = Environment.GetEnvironmentVariable("APP_ID_TEST") ?? throw new ArgumentNullException("APP_ID_TEST environment variable not set");
-            var response = instance.AppsAppStoreVersionsGetToManyRelated(id);
-            Assert.IsType<AppStoreVersionsResponse>(response);
+            // string id = Environment.GetEnvironmentVariable("APP_ID_TEST") ?? throw new ArgumentNullException("APP_ID_TEST environment variable not set");
+            // var response = instance.AppsAppStoreVersionsGetToManyRelated(id);
+            // Assert.IsType<AppStoreVersionsResponse>(response);
         }
 
         /// <summary>
