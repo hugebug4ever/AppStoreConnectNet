@@ -1,0 +1,174 @@
+# AppStoreConnect.Net.Api.PromotedPurchasesApi
+
+All URIs are relative to *https://api.appstoreconnect.apple.com*
+
+| Method | HTTP request | Description |
+|--------|--------------|-------------|
+| [**PromotedPurchasesCreateInstance**](PromotedPurchasesApi.md#promotedpurchasescreateinstance) | **POST** /v1/promotedPurchases |  |
+| [**PromotedPurchasesDeleteInstance**](PromotedPurchasesApi.md#promotedpurchasesdeleteinstance) | **DELETE** /v1/promotedPurchases/{id} |  |
+| [**PromotedPurchasesGetInstance**](PromotedPurchasesApi.md#promotedpurchasesgetinstance) | **GET** /v1/promotedPurchases/{id} |  |
+| [**PromotedPurchasesUpdateInstance**](PromotedPurchasesApi.md#promotedpurchasesupdateinstance) | **PATCH** /v1/promotedPurchases/{id} |  |
+
+<a id="promotedpurchasescreateinstance"></a>
+# **PromotedPurchasesCreateInstance**
+> PromotedPurchaseResponse PromotedPurchasesCreateInstance (PromotedPurchaseCreateRequest promotedPurchaseCreateRequest)
+
+
+
+
+### Parameters
+
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **promotedPurchaseCreateRequest** | [**PromotedPurchaseCreateRequest**](PromotedPurchaseCreateRequest.md) | PromotedPurchase representation |  |
+
+### Return type
+
+[**PromotedPurchaseResponse**](PromotedPurchaseResponse.md)
+
+### Authorization
+
+[itc-bearer-token](../README.md#itc-bearer-token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **400** | Parameter error(s) |  -  |
+| **401** | Unauthorized error(s) |  -  |
+| **403** | Forbidden error |  -  |
+| **422** | Unprocessable request entity error(s) |  -  |
+| **201** | Single PromotedPurchase |  -  |
+| **409** | Request entity error(s) |  -  |
+| **429** | Rate limit exceeded error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+
+<a id="promotedpurchasesdeleteinstance"></a>
+# **PromotedPurchasesDeleteInstance**
+> void PromotedPurchasesDeleteInstance (string id)
+
+
+
+
+### Parameters
+
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **id** | **string** | the id of the requested resource |  |
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[itc-bearer-token](../README.md#itc-bearer-token)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **400** | Parameter error(s) |  -  |
+| **401** | Unauthorized error(s) |  -  |
+| **403** | Forbidden error |  -  |
+| **404** | Not found error |  -  |
+| **409** | Request entity error(s) |  -  |
+| **204** | Success (no content) |  -  |
+| **429** | Rate limit exceeded error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+
+<a id="promotedpurchasesgetinstance"></a>
+# **PromotedPurchasesGetInstance**
+> PromotedPurchaseResponse PromotedPurchasesGetInstance (string id, List<string> fieldsPromotedPurchases = null, List<string> include = null)
+
+
+
+
+### Parameters
+
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **id** | **string** | the id of the requested resource |  |
+| **fieldsPromotedPurchases** | [**List&lt;string&gt;**](string.md) | the fields to include for returned resources of type promotedPurchases | [optional]  |
+| **include** | [**List&lt;string&gt;**](string.md) | comma-separated list of relationships to include | [optional]  |
+
+### Return type
+
+[**PromotedPurchaseResponse**](PromotedPurchaseResponse.md)
+
+### Authorization
+
+[itc-bearer-token](../README.md#itc-bearer-token)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **400** | Parameter error(s) |  -  |
+| **401** | Unauthorized error(s) |  -  |
+| **403** | Forbidden error |  -  |
+| **404** | Not found error |  -  |
+| **200** | Single PromotedPurchase |  -  |
+| **429** | Rate limit exceeded error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+
+<a id="promotedpurchasesupdateinstance"></a>
+# **PromotedPurchasesUpdateInstance**
+> PromotedPurchaseResponse PromotedPurchasesUpdateInstance (string id, PromotedPurchaseUpdateRequest promotedPurchaseUpdateRequest)
+
+
+
+
+### Parameters
+
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **id** | **string** | the id of the requested resource |  |
+| **promotedPurchaseUpdateRequest** | [**PromotedPurchaseUpdateRequest**](PromotedPurchaseUpdateRequest.md) | PromotedPurchase representation |  |
+
+### Return type
+
+[**PromotedPurchaseResponse**](PromotedPurchaseResponse.md)
+
+### Authorization
+
+[itc-bearer-token](../README.md#itc-bearer-token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **400** | Parameter error(s) |  -  |
+| **401** | Unauthorized error(s) |  -  |
+| **403** | Forbidden error |  -  |
+| **404** | Not found error |  -  |
+| **422** | Unprocessable request entity error(s) |  -  |
+| **200** | Single PromotedPurchase |  -  |
+| **409** | Request entity error(s) |  -  |
+| **429** | Rate limit exceeded error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+

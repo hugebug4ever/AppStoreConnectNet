@@ -1,0 +1,10 @@
+{
+  "name": "apple-appstoreconnect-api-client",
+  "version": "0.0.0",
+  "scripts": {
+    "gen-csharp": "openapi-generator-cli generate --generator-key csharp"
+  },
+  "dependencies": {
+    "@openapitools/openapi-generator-cli": "^2.27.0"
+  }
+}

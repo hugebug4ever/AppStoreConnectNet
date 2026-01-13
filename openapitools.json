@@ -2,6 +2,18 @@
   "$schema": "./node_modules/@openapitools/openapi-generator-cli/config.schema.json",
   "spaces": 2,
   "generator-cli": {
-    "version": "7.18.0"
+    "version": "7.18.0",
+    "generators": {
+      "csharp": {
+        "generatorName": "csharp",
+        "inputSpec": "openapi.oas.json",
+        "output": "generated",
+        "config": "openapi-config.yaml",
+        "additionalProperties": {
+          "useDateTimeOffset": true,
+          "nullableReferenceTypes": true
+        }
+      }
+    }
   }
 }

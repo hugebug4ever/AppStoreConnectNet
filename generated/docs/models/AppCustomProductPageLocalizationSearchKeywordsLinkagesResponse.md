@@ -1,0 +1,12 @@
+# AppStoreConnect.Net.Model.AppCustomProductPageLocalizationSearchKeywordsLinkagesResponse
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**Data** | [**List&lt;AppCustomProductPageLocalizationRelationshipsSearchKeywordsDataInner&gt;**](AppCustomProductPageLocalizationRelationshipsSearchKeywordsDataInner.md) |  | 
+**Links** | [**PagedDocumentLinks**](PagedDocumentLinks.md) |  | 
+**Meta** | [**PagingInformation**](PagingInformation.md) |  | [optional] 
+
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
+

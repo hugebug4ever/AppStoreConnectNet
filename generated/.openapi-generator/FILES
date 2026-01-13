@@ -1,5 +1,4 @@
 .gitignore
-.openapi-generator-ignore
 AppStoreConnect.Net.sln
 README.md
 api/openapi.yaml
