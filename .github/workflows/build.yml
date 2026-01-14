@@ -17,6 +17,7 @@ jobs:
     env:
       NUPKG_MAJOR: 0.999
       # CODESIGN_PFX: ${{ secrets.CODESIGN_PFX }}
+      APP_ID_TEST: ${{ secrets.APP_ID_TEST }}
       APP_STORE_CONNECT_KEY_ID: ${{ secrets.APP_STORE_CONNECT_KEY_ID }}
       APP_STORE_CONNECT_ISSUER_ID: ${{ secrets.APP_STORE_CONNECT_ISSUER_ID }}
       APP_STORE_CONNECT_PRIVATE_KEY: ${{ secrets.APP_STORE_CONNECT_PRIVATE_KEY }}
